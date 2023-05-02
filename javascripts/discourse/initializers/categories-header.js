@@ -9,7 +9,7 @@ export default {
       const idList = settings.featured_categories.split("|");
       const featuredCategories = idList.map(id => Category.findById(id));
 
-      api.registerConnectorClass("below-site-header", "categories-header", {
+      api.registerConnectorClass("above-main-container", "categories-header", {
         setupComponent(args, component) {
           api.onPageChange((url, title) => {
             if (url === "/" || url === "/latest" || url === "/new" || url === "/unread" || url === "/top") {
