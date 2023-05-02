@@ -4,8 +4,7 @@ html.categories-header {
     .wrap {
       display: flex;
       flex-direction: row;
-      column-gap: $gap;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       .categories-header-item {
         h3.category-title {
