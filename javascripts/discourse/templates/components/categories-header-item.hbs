@@ -5,29 +5,22 @@
 <div class="category-logo">
         {{cdn-img
           src=category.uploaded_logo.url
-          class="category-logo"
+          class="category-img"
           width=category.uploaded_logo.width
           height=category.uploaded_logo.height
           alt=""
         }}
 </div>
 {{/if}}
-
-  <h3 class="category-title">    
-      <div class="category-icon-name">
-        {{category-title-before category=category}}
-        {{#if category.read_restricted}}
-          {{d-icon "lock"}}
-        {{/if}}
-        <span class="category-name">{{dir-span category.name}}</span>
-      </div>    
-  </h3>
+<div class="category-text-contents">
+  <h3 class="category-title"> {{dir-span category.name}}</h3>
   <div class="category-description">
   <span class="shortdesc1">{{theme-setting "category_1_short_description"}}</span>
   <span class="shortdesc2">{{theme-setting "category_2_short_description"}}</span>
   <span class="shortdesc3">{{theme-setting "category_3_short_description"}}</span>
   <span class="shortdesc4">{{theme-setting "category_4_short_description"}}</span>
   </div>  
+</div>
 </a>
 </div>
 </div>
