@@ -2,18 +2,7 @@ featured_categories:
   type: list
   list_type: category
   default: ""
-frame_size:
-  type: string
-  default: "80px"
-frame_border_radius:
-  type: string
-  default: "50%"
-frame_bg_color:
-  type: string
-  default: "var(--primary-low)"
-logo_size:
-  type: string
-  default: "40px"
-gap:
-  type: string
-  default: "40px"
+category_short_description:
+  type: list
+  description: 
+    en: "semicolon delimited, in this order: category_id;shortdescription"
