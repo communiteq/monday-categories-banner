@@ -1,4 +1,4 @@
-<div class="categories-header-item {{if category.uploaded_logo.url "has-logo" "no-logo"}}">
+<div class="categories-header-item {{if category.uploaded_logo.url "has-logo" "no-logo"}} category-{{category.name}}">
 
 {{#if category.uploaded_logo.url}}
 <div class="category-logo">
@@ -24,6 +24,6 @@
     </a>
   </h3>
   <div class="category-description">
-       <div class="cooked" innerHTML={{dir-span category.description}}></div>
+       <div class="cooked" innerHTML={{category.description}}></div>
   </div>
 </div>
