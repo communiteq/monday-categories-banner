@@ -1,7 +1,7 @@
 <div class="categories-header-item {{if category.uploaded_logo.url "has-logo" "no-logo"}}">
-  <h3 class="category-title">
-    <a class="category-title-link" href={{category.url}}>
-      {{#if category.uploaded_logo.url}}
+
+{{#if category.uploaded_logo.url}}
+<div class="category-logo">
         {{cdn-img
           src=category.uploaded_logo.url
           class="category-logo"
@@ -9,7 +9,11 @@
           height=category.uploaded_logo.height
           alt=""
         }}
-      {{/if}}
+</div>
+{{/if}}
+
+  <h3 class="category-title">
+    <a class="category-title-link" href={{category.url}}>
       <div class="category-icon-name">
         {{category-title-before category=category}}
         {{#if category.read_restricted}}
