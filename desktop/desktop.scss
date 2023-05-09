@@ -22,10 +22,10 @@ html.categories-header {
               justify-content: center;
               margin: 0;
               padding: 0;
-              width: $frame_size;
-              height: $frame_size;
-              background-color: $frame_bg_color;
-              border-radius: $frame_border_radius;
+              width: auto;
+              height: 25px;
+              background-color: #6161FF;
+              border-radius: 4px;
               img {
                 width: $logo-size;
                 height: $logo-size;
