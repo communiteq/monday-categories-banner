@@ -4,5 +4,6 @@ featured_categories:
   default: ""
 category_short_description:
   type: list
+  default: ""
   description: 
     en: "semicolon delimited, in this order: category_id;shortdescription"
