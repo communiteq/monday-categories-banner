@@ -4,4 +4,10 @@
     {{categories-header-item category=category}}
   {{/each}}
   </div>
+  <div class="circle-indicators">
+     <span class="circle" data-index="0" {{on "click" this.selectSlide}}></span>
+     <span class="circle" data-index="1" {{on "click" this.selectSlide}}></span>
+     <span class="circle" data-index="2" {{on "click" this.selectSlide}}></span>
+     <span class="circle" data-index="3" {{on "click" this.selectSlide}}></span>
+  </div>
 </div>
