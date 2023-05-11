@@ -12,7 +12,7 @@ export default {
       api.registerConnectorClass("above-main-container", "categories-header", {
         setupComponent(args, component) {
           api.onPageChange((url, title) => {
-            if (url === "/" || url === "/latest" || url === "/new" || url === "/unread" || url === "/top") {
+            if if ((url == "/") || url.startsWith('/?')) {
               $("html").addClass("categories-header");
               // add a class to the HTML tag for easy CSS targetting
               component.set("categories", featuredCategories);
