@@ -3,18 +3,18 @@ featured_categories:
   list_type: category
   default: ""
 category_1_short_description:
-  default: ""
+  default: "Ask and get inspired"
   description: 
     en: "description for featured category card 1"
 category_2_short_description:
-  default: ""
+  default: "Find out what’s new"
   description: 
     en: "description for featured category card 2"
 category_3_short_description:
-  default: ""
+  default: "Share your big idea"
   description: 
     en: "description for featured category card 3"
 category_4_short_description:
-  default: ""
+  default: "This months events"
   description: 
     en: "description for featured category card 4"
