@@ -3,92 +3,90 @@ html.categories-header {
     display: none;
   }
 }
-.categories-banner-wrapper {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-}
-.category-box {
-    display: flex;
-    min-width: 350px;
-    min-height: 110px;
-    margin: 5px;
-}
-
-.categories-header-item {
-    border-radius: 4px;
-    flex: 0 0 100%;
-    min-height: 120px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    
-}
-
-.category-logo {
-    float: left;
-    width: 20%;
-    justify-content: flex-start;
-    img {
-        width: auto;
-        height: 25px;
-        align-self: center;
-        padding: 10px;
-    }
-}
-
-.category-title-link {
-    text-decoration: none;
-    color: #fff;
-}
-
-.category-title-link:visited {
-    text-decoration: none;
-    color: #fff;
-}
-
-.category-title-link:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.shortdesc1,.shortdesc2,.shortdesc3,.shortdesc4 {
-    display:none;
-}
-
-.category-banner-platform-discussions {
-    background: #00CA72;
-    .shortdesc1 {
-        display: flex;
-    }
-}
-
-.category-banner-announcements {
-    background: #6161FF;
-    .shortdesc2 {
-        display: flex;
-    }
-}
-
-
-.category-banner-submit-an-idea {
-    background: #FFCC00;
-    .shortdesc3 {
-        display: flex;
-    }
-}
-
-.category-banner-community-events {
-    background: #CFCFF9;
-    .shortdesc4 {
-        display: flex;
-    }
-}
-
-.category-text-contents {
-    margin-left: 20%;
-}
 
 body.landing-page .bullet-x-indicators {
     display: flex;
 }
+
+.categories-banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+    .category-box {
+        display: flex;
+        width: 330px;
+        height: 120px;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    .category-text-contents {
+        margin-left: 66px;
+    }
+
+    .categories-header-item {
+        border-radius: 4px;
+        width: 100%;
+        padding: 40px 35px 40px 25px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+
+        .category-description {
+            font-size: 14px;
+        }
+    }
+
+    .category-logo {
+        float: left;
+        width: 40px;
+        justify-content: flex-start;
+        img {
+            height: 40px;
+            width: auto;
+            max-width: 40px;
+        }
+    }
+
+    .category-title-link, .category-title-link:visited, .category-title-link:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .shortdesc1, .shortdesc2, .shortdesc3, .shortdesc4 {
+        display: none;
+    }
+
+    .category-banner-platform-discussions {
+        background: #00CA72;
+        .shortdesc1 {
+            display: flex;
+        }
+    }
+
+    .category-banner-announcements {
+        background: #6161FF;
+        .shortdesc2 {
+            display: flex;
+        }
+    }
+
+
+    .category-banner-feature-requests {
+        background: #FFCC00;
+        .shortdesc3 {
+            display: flex;
+        }
+    }
+
+    .category-banner-community-events {
+        background: #CFCFF9;
+        .shortdesc4 {
+            display: flex;
+        }
+    }
+}
+
