@@ -90,3 +90,37 @@ body.landing-page .bullet-x-indicators {
     }
 }
 
+/* On page itself */
+.category-title-header {
+    .category-main-banner {
+        margin: 30px 20px; /* wrap already has 20px left and right */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: var(--d-max-width);
+        text-align: left;
+    }
+
+    .category-banner-logo {
+        align-self: flex-start;
+        img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .category-title-contents {
+        margin-top: 45px;
+        margin-left: 0 !important;
+        padding: 0 !important;
+
+        .category-title-description {
+            font-size: 14px;
+        }
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+}
+
