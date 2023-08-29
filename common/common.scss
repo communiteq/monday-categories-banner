@@ -13,8 +13,24 @@
     border-radius: 50%;
     cursor: pointer;
 }
-    
+
 .bullet-x[data-index="0"] {
     background-color: #6161ff;
     border: 1px solid #6161ff;
+}
+
+/* All category banner text is black */
+.category-title-contents {
+    color: #000;
+}
+
+/* except for these: */
+.category-announcements,
+.category-guidelines,
+.category-nonprofits,
+.category-platform-discussions-special-workflows-and-use-cases,
+.category-platform-discussions {
+    .category-title-contents {
+        color: #fff;
+    }
 }
