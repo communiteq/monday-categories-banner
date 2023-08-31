@@ -1,0 +1,15 @@
+{{#if this.mustShow}}
+<div class="wrap">
+  <div class="categories-banner-wrapper" {{did-insert this.onComponentMount}}>
+    {{#each categories as |category|}}
+      {{categories-header-item category=category}}
+    {{/each}}
+  </div>
+  <div class="bullet-x-indicators">
+     <span class="bullet-x" data-index="0" {{on "click" this.selectSlide}}></span>
+     <span class="bullet-x" data-index="1" {{on "click" this.selectSlide}}></span>
+     <span class="bullet-x" data-index="2" {{on "click" this.selectSlide}}></span>
+     <span class="bullet-x" data-index="3" {{on "click" this.selectSlide}}></span>
+  </div>
+</div>
+{{/if}}

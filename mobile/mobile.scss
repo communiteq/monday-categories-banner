@@ -12,6 +12,7 @@ body.landing-page .bullet-x-indicators {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 
     .category-box {
         display: flex;
