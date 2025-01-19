@@ -16,7 +16,7 @@ export default class CategoriesHeader extends Component {
         super(...arguments);
 
         const idList = settings.featured_categories.split("|");
-        const featuredCategories = idList.map(id => Category.findById(id));
+        const featuredCategories = idList.map(id => Category.findById(parseInt(id, 10)));
         this.categories = featuredCategories;
     }
 
@@ -63,6 +63,6 @@ export default class CategoriesHeader extends Component {
             }
         });
 
-        
+
     }
 }
