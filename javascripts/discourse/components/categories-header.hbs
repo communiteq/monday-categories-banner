@@ -1,7 +1,7 @@
 {{#if this.mustShow}}
 <div class="wrap">
   <div class="categories-banner-wrapper" {{did-insert this.onComponentMount}}>
-    {{#each categories as |category|}}
+    {{#each this.categories as |category|}}
       {{categories-header-item category=category}}
     {{/each}}
   </div>

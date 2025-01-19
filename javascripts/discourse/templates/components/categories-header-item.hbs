@@ -1,25 +1,25 @@
 <div class="category-box">
-<div class="categories-header-item {{if category.uploaded_logo.url "has-logo" "no-logo"}} category-banner-{{category.slug}}">
-<a class="category-title-link" href={{category.url}}>
-{{#if category.uploaded_logo.url}}
+<div class="categories-header-item {{if this.category.uploaded_logo.url "has-logo" "no-logo"}} category-banner-{{this.category.slug}}">
+<a class="category-title-link" href={{this.category.url}}>
+{{#if this.category.uploaded_logo.url}}
 <div class="category-logo">
         {{cdn-img
-          src=category.uploaded_logo.url
+          src=this.category.uploaded_logo.url
           class="category-img"
-          width=category.uploaded_logo.width
-          height=category.uploaded_logo.height
+          width=this.category.uploaded_logo.width
+          height=this.category.uploaded_logo.height
           alt=""
         }}
 </div>
 {{/if}}
 <div class="category-text-contents">
-  <h3 class="category-title"> {{dir-span category.name}}</h3>
+  <h3 class="category-title"> {{dir-span this.category.name}}</h3>
   <div class="category-description">
   <span class="shortdesc1">{{theme-setting "category_1_short_description"}}</span>
   <span class="shortdesc2">{{theme-setting "category_2_short_description"}}</span>
   <span class="shortdesc3">{{theme-setting "category_3_short_description"}}</span>
   <span class="shortdesc4">{{theme-setting "category_4_short_description"}}</span>
-  </div>  
+  </div>
 </div>
 </a>
 </div>
